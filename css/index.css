@@ -11,3 +11,111 @@ body {
 .logo > img {
   width: 50px;
 }
+
+nav {
+  background-color: #5B5B5B;
+  color: white;
+  text-align: right;
+}
+
+footer {
+  display: grid;
+  width: 100%;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+}
+
+section {
+  border-radius: 25px;
+  border: 2px solid #C8C8C8;
+
+  margin: 10px;
+}
+
+.product {
+  text-align: center;
+}
+
+.product p {
+  text-align: left;
+}
+
+
+@media (max-width:600px) {
+  .menu {
+    position: absolute;
+    color: transparent
+  }
+
+  header {
+    text-align: center;
+  }
+}
+
+@media (min-width : 600px) and (max-width:990px) {
+  .menu {
+    position: absolute;
+    color: transparent
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  footer {
+    border-top: 2px solid #C8C8C8;
+    margin: 10px;
+  }
+}
+
+@media (min-width:991px) {
+  .hamburger {
+    position: absolute;
+    color: transparent
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  header {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  footer {
+    border-top: 2px solid #C8C8C8;
+  }
+  section {
+    width: 30%;
+  }
+}
